@@ -1,0 +1,29 @@
+# Credentials: never commit
+.env
+.env.*
+*.json
+!tests/fixtures/**/*.json
+!testbed/expected_findings.json
+*.pem
+*.p12
+*-key.json
+credentials*
+
+# Scan output
+scans/*
+!scans/.gitkeep
+
+# Terraform
+testbed/.terraform/
+testbed/*.tfstate
+testbed/*.tfstate.*
+testbed/*.tfvars
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+dist/
+build/
